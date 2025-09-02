@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Take Attendance</h2>
+<form method="POST">
+    <label for="subject">Subject:</label>
+    <select name="subject" id="subject" required>
+        <option value="CN">Computer Networks</option>
+        <option value="DV">Data Visualization</option>
+        <option value="AI">Artificial Intelligence</option>
+        <option value="TC">Theory of Computation</option>
+        <option value="RM">Research Methadology</option>
+        <option value="SE">Software Engineering</option>
+        <option value="EVS">Envirnmental study</option>
+        
+    </select>
+    <button type="submit" name="action" value="login">Login Attendance</button>
+    <button type="submit" name="action" value="logout">Logout Attendance</button>
+</form>
+{% endblock %}
